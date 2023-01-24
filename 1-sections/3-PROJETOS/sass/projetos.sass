@@ -28,10 +28,10 @@
             
 #cartoes
     @include display-direc( flex, column, center, center)
-    @include size--marg(55%, max-content, 0px, 0px)
+    @include size--marg(50%, max-content, 0px, 0px)
 
     #cartao-proj
-        @include size--marg(300px, 90px, 20px 0px, 0px)
+        @include size--marg(500px, 125px, 20px 0px, 0px)
         transform-style: preserve-3d
         transition-duration: 1s
 
@@ -78,6 +78,7 @@
             ul
                 li
                     @include custom-font(1rem, #000)
+                    list-style: none
 
                     @include mobile-1
                         font-size: 0.6rem
@@ -102,7 +103,6 @@
                     border: solid 1px rgb(154, 154, 154)
                     background-color: #fff
 
-
                     @include mobile-1
                         font-size: 0.5rem
 
@@ -125,22 +125,31 @@
             h2
                 @include custom-font(1.5rem, #000)
 
+                @include mobile-1
+                    font-size: 1.2rem
+
+                @include mobile-2
+                    font-size: 1rem
+
                 @include mobile-3
+                    font-size: 1rem
+
+                @include mobile-4
                     font-size: 1rem
             p
                 height: 100%
                 @include custom-font(0.9rem, #000)
 
-                @include mobile-4
-                    font-size: 0.5rem
-
-                @include mobile-3
+                @include mobile-1
                     font-size: 0.5rem
 
                 @include mobile-2
                     font-size: 0.5rem
 
-                @include mobile-1
+                @include mobile-3
+                    font-size: 0.5rem
+
+                @include mobile-4
                     font-size: 0.5rem
                                             
 .flip 
