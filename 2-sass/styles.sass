@@ -23,7 +23,7 @@ header
     width: 100%
     z-index: 1000
 
-    nav // MENU-BAR
+    nav
         @include display-direc(flex, row, center, center)
         @include size--marg( 100%, 50px, 0px, 0px)
         background-color: #ffffff9f
@@ -50,11 +50,11 @@ header
                     @include mobile-4
                         font-size: 0.7rem
 
-main // CONTEUDO
+main
     @include size--marg( 100%, 100%, 0px, 0px)
     position: absolute
 
-footer  // FOOTER
+footer
     @include display-direc(flex, row, flex-start, center)
     @include size--marg( 100%, 5%, 0px, 0px)
     background: linear-gradient(#e4e4e4, rgb(62, 62, 62))

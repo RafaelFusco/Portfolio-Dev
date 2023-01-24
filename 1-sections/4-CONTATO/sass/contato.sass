@@ -6,11 +6,11 @@
     @include display-direc(flex, column, space-around, center)
     @include size--marg(100%, 100vh, 0px, 0px)
 
-#contato // CONTEUDO CONTATO
+#contato
     background-color: #e4e4e4
     border-top: solid 2px rgba(0, 0, 0, 0.5)
 
-    #separar // JUNTA O TITULO COM O FORMULARIO
+    #separar
         @include display-direc(flex, row, space-around, center)
         @include size--marg(100%, 85%, 50px 0 0 0, 0px)
 
@@ -26,17 +26,17 @@
         @include mobile-4
             flex-direction: column
 
-        h1 // TITULO
+        h1
             @extend %titulo
 
             @include mobile-4
                 font-size: 1.5rem
   
-        #formulario // ESTILO DO FORMULARIO
+        #formulario
             @include display-direc(flex, column, center, center)
             @include size--marg(max-content, max-content, 15px 0 25px, 0px)
             @extend %cartao-style        
-            form // FORMULARIO
+            form
                 @include display-direc(flex, column, center, center)
                 @include size--marg(400px, 280px, 0 15px, 0px)
                 font-weight: 600
@@ -53,17 +53,17 @@
                 @include mobile-4
                     width: 200px
 
-                label // LABEL NAME E EMAIL
+                label
                     font-size: 1rem
 
-                input // INPUT NAME E EMAIL
+                input
                     width: 100%
                     border: solid 1px rgb(154, 154, 154)
                     &:focus
                         box-shadow: 0 0 0 0
                         outline: 0
 
-                textarea // MENSAGEM
+                textarea
                     @include size--marg(100%, 50%, 10px 0, 0)
                     border: solid 1px rgb(154, 154, 154)
                     resize: none
@@ -71,27 +71,27 @@
                         box-shadow: 0 0 0 0
                         outline: 0
 
-                button // BOTAO ENVIAR
+                button
                     @include size--marg(100%, max-content, 0, 3px)
                     border: solid 1px rgb(154, 154, 154)
                     font-weight: 600
                     cursor: pointer
  
-    #links // REDES SOCIAIS
+    #links
         @include display-direc(flex, row, space-between, center)
         @include size--marg(100%, 12%, 0, 0)
         background-color: #e4e4e4
         box-shadow: 0 0 3px black
         cursor: default
 
-        .links-info // ELEMENTOS
+        .links-info
             @include display-direc(flex, row, center, center)
             @include size--marg(100%, 100%, 0, 5px)
             list-style: none
             &:hover
                 background-color: rgb(255, 255, 255)
 
-            img // ICONES
+            img
                 @include size--marg(24px, 24px, 5px, 0)
 
                 @include mobile-3
@@ -105,7 +105,7 @@
             ul
                 list-style: none
 
-                li // TEXTO
+                li
                     font-weight: 600
 
                     @include mobile-1
@@ -120,7 +120,7 @@
                     @include mobile-4
                         font-size: 0rem
 
-                    a // LINK
+                    a
                         color: #000
                                 
                             

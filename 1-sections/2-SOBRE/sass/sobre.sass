@@ -2,7 +2,7 @@
 @import '../../../2-sass/_placeholder'
 @import '../../../2-sass/_utilities'
 
-#sobre // CONTEUDO SOBRE
+#sobre
     @include display-direc( flex, column, center, center)
     @extend %tamanho-conteudo
     background-color: #e4e4e4
@@ -10,11 +10,11 @@
     @include mobile-3
         padding-top: 0
 
-    #sobre-mim // CONTEUDO 1
+    #sobre-mim
         @include display-direc( flex, row, space-between, center)
         @include size--marg( 80%, max-content, 20px 20px 20px 0, 0px)
 
-        h1  // TITULO
+        h1
             @extend %titulo
             
             @include mobile-1
@@ -29,10 +29,10 @@
             @include mobile-4
                 font-size: 0.7rem
 
-        span // ESCOPO TEXTO
+        span
             width: 520px
 
-            p // TEXTO
+            p
                 @include custom-font(1rem, #000)
 
                 @include mobile-1
@@ -47,11 +47,11 @@
                 @include mobile-4
                     font-size: 0.5rem
                 
-    #educacao // CONTEUDO 2
+    #educacao
         @include display-direc( flex, row, space-between, center)
         @include size--marg( 80%, max-content, 20px 20px 20px 0, 0px)
         
-        h1  // TITULO
+        h1
             @extend %titulo 
              
             @include mobile-1
@@ -66,15 +66,15 @@
             @include mobile-4
                 font-size: 0.7rem    
 
-        #sobre-educacao // CARTAO
+        #sobre-educacao
             @extend %cartao-style
             width: 520px
             height: max-content
 
-            span // TITULOS DO CARTAO
+            span
                 @include display-direc( flex, row, space-between, center)
 
-                h2 // UNIVERSIDADE
+                h2
                     @include custom-font(1.5rem, #000)
 
                     @include mobile-1
@@ -89,7 +89,7 @@
                     @include mobile-4
                         font-size: 0.5rem
 
-                h3 // DATA
+                h3
                     @include custom-font(1rem, #000)
                     
                     @include mobile-1
@@ -104,7 +104,7 @@
                     @include mobile-4
                         font-size: 0.5rem
 
-            h4 // GRADUAÇÃO
+            h4
                 @include custom-font(0.9rem, #000)
 
                 @include mobile-1
@@ -119,7 +119,7 @@
                 @include mobile-4
                     font-size: 0.5rem
 
-            ul // LISTA
+            ul
                 @include custom-font(1rem, #000)
                 @include size--marg( 95%, max-content, 10px 20px, 0px)
 
@@ -135,7 +135,7 @@
                 @include mobile-4
                     margin: 5px 10px
 
-                li // ELEMENTOS
+                li
                     @include custom-font(0.8rem, #000)
 
                     @include mobile-1
@@ -151,11 +151,11 @@
                         font-size: 0.4rem
 
 
-    #habilidades // CONTEUDO 3
+    #habilidades
         @include display-direc( flex, row, space-between, center)
         @include size--marg( 80%, max-content, 20px 20px 20px 0, 0px)
 
-        h1  // TITULO
+        h1
             @extend %titulo
             
             @include mobile-1
@@ -170,12 +170,12 @@
             @include mobile-4
                 font-size: 0.7rem
 
-        ul // LISTA
+        ul
             @include display-direc( flex, row, flex-start, center)
             width: 520px
             list-style: none  
 
-            li // HABILIDADES
+            li
                 @include custom-font(0.8rem, #000)
                 @extend %cartao-style
                 width: max-content

@@ -2,13 +2,13 @@
 @import '../../../2-sass/_placeholder'
 @import '../../../2-sass/_utilities'
 
-#projetos // CONTEUDO PROJETOS
+#projetos
     @include display-direc( flex, column, center, center)
     @extend %tamanho-conteudo
     background-color: #f1f1f1
     border-top: solid 2px rgba(0, 0, 0, 0.5)
 
-#agrupar // JUNTA O TITULO COM OS CARTOES
+#agrupar
     @include display-direc( flex, row, space-between, center)
     @include size--marg(80%, max-content, 0px, 0px)
 
@@ -23,14 +23,14 @@
 
     @include mobile-1
         flex-direction: column
-    h1 // TITULO
+    h1
         @extend %titulo
             
-#cartoes // LISTA DE CARTOES
+#cartoes
     @include display-direc( flex, column, center, center)
     @include size--marg(55%, max-content, 0px, 0px)
 
-    #cartao-proj // TAMANHO DO CARTAO
+    #cartao-proj
         @include size--marg(300px, 90px, 20px 0px, 0px)
         transform-style: preserve-3d
         transition-duration: 1s
@@ -51,7 +51,7 @@
             width: 240px
             height: 90px    
                           
-        #front // FRENTE DO CARTAO
+        #front
             transform: rotateX(180deg)
             img  
                 @include size--marg(30%, 100%, 0px, 0px)
@@ -60,7 +60,7 @@
                     width: 30%
                     height: 100%
             
-            h2 // TITULO
+            h2
                 @include custom-font(1.5rem, #000)
 
                 @include mobile-1
@@ -76,8 +76,8 @@
                     font-size: 1rem
 
 
-            ul // LISTA
-                li // ELEMENTOS
+            ul
+                li
                     @include custom-font(1rem, #000)
 
                     @include mobile-1
@@ -92,12 +92,12 @@
                     @include mobile-4
                         font-size: 0.6rem
 
-            ul#hab // LISTA DE HABILIDADES
+            ul#hab
                 @include display-direc( flex, row, center, center)
                 width: 100%
                 list-style: none
 
-                li // ELEMENTOS
+                li
                     @include size--marg(max-content, max-content, 2px, 0 2%)
                     @include custom-font(0.9rem, #000)
                     border: solid 1px rgb(154, 154, 154)
@@ -118,14 +118,14 @@
 
 
         
-        #back // COSTAS DO CARTAO
+        #back
             img
                 @include size--marg(30%, 100%, 0px, 0px)
                 @include mobile-3
                     width: 30%
                     height: 100%
             
-            h2 // SOBRE
+            h2
                 @include custom-font(1.5rem, #000)
 
                 @include mobile-3
@@ -179,6 +179,6 @@
 #botao-flip // BOTAO DO CARTAO
     @include display-direc( flex, column, flex-end, flex-end)
     @include size--marg(max-content, 100%, 0px, 0px)
-    button // ESTILO DO BOTAO
+    button
         @include size--marg(24px, 24px, 0px, 0px)
         border: solid 1px rgb(154, 154, 154)
