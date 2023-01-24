@@ -14,65 +14,99 @@
         @include display-direc( flex, row, space-between, center)
         @include size--marg( 80%, max-content, 20px 20px 20px 0, 0px)
 
+        @include mobile-1
+            flex-direction: column
+
+        @include mobile-2
+            flex-direction: column
+
+        @include mobile-3
+            flex-direction: column
+
+        @include mobile-4
+            flex-direction: column
+
         h1
             @extend %titulo
             
             @include mobile-1
-                font-size: 0.7rem
+                font-size: 1rem
 
             @include mobile-2
-                font-size: 0.7rem
+                font-size: 1rem
 
             @include mobile-3
-                font-size: 0.7rem
+                font-size: 1rem
 
             @include mobile-4
-                font-size: 0.7rem
+                font-size: 1rem
 
         span
-            width: 520px
+            width: 100%
 
             p
                 @include custom-font(1rem, #000)
 
                 @include mobile-1
                     font-size: 0.6rem
+                    width: 95%
+                    margin: 10px
 
                 @include mobile-2
                     font-size: 0.6rem
+                    width: 95%
+                    margin: 10px
 
                 @include mobile-3
                     font-size: 0.6rem
+                    width: 95%
+                    margin: 10px
                     
                 @include mobile-4
                     font-size: 0.5rem
+                    width: 95%
+                    margin: 10px
                 
     #educacao
         @include display-direc( flex, row, space-between, center)
         @include size--marg( 80%, max-content, 20px 20px 20px 0, 0px)
-        
+
+        @include mobile-1
+            flex-direction: column
+
+        @include mobile-2
+            flex-direction: column
+
+        @include mobile-3
+            flex-direction: column
+
+        @include mobile-4
+            flex-direction: column
+
         h1
             @extend %titulo 
              
             @include mobile-1
-                font-size: 0.7rem    
+                font-size: 1rem 
 
             @include mobile-2
-                font-size: 0.7rem    
+                font-size: 1rem  
 
             @include mobile-3
-                font-size: 0.7rem    
+                font-size: 1rem    
 
             @include mobile-4
-                font-size: 0.7rem    
+                font-size: 1rem  
 
         #sobre-educacao
             @extend %cartao-style
-            width: 520px
+            width: 100%
             height: max-content
+            margin: 10px
 
             span
                 @include display-direc( flex, row, space-between, center)
+                width: 100%
 
                 h2
                     @include custom-font(1.5rem, #000)
@@ -155,24 +189,37 @@
         @include display-direc( flex, row, space-between, center)
         @include size--marg( 80%, max-content, 20px 20px 20px 0, 0px)
 
+        @include mobile-1
+            flex-direction: column
+
+        @include mobile-2
+            flex-direction: column
+
+        @include mobile-3
+            flex-direction: column
+
+        @include mobile-4
+            flex-direction: column
+
         h1
             @extend %titulo
             
             @include mobile-1
-                font-size: 0.7rem
+                font-size: 1rem
 
             @include mobile-2
-                font-size: 0.7rem
+                font-size: 1rem
 
             @include mobile-3
-                font-size: 0.7rem
+                font-size: 1rem
 
             @include mobile-4
-                font-size: 0.7rem
+                font-size: 1rem
 
         ul
             @include display-direc( flex, row, flex-start, center)
-            width: 520px
+            width: max-content
+            margin: 10px
             list-style: none  
 
             li
