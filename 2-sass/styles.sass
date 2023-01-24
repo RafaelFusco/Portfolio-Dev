@@ -1,0 +1,75 @@
+@import 'mixins'
+@import 'placeholder'
+@import '../1-sections/1-INICIO/css/inicio.css'
+@import '../1-sections/2-SOBRE/css/sobre.css'
+@import '../1-sections/3-PROJETOS/css/projetos.css'
+@import '../1-sections/4-CONTATO/css/contato.css'
+
+@import 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap'
+
+*
+    box-sizing: border-box
+    margin: 0px
+    padding: 0px
+    font-family: 'Work Sans', sans-serif  
+
+html,body
+    @include display-direc(flex, column, space-around, center)
+    @include size--marg(auto, 100vh, 0px, 0px)
+
+header 
+    position: fixed
+    width: 100%
+    z-index: 1000
+
+    nav // MENU-BAR
+        @include display-direc(flex, row, center, center)
+        @include size--marg( 100%, 50px, 0px, 0px)
+        background-color: #ffffff9f
+        backdrop-filter: blur(13.5px)
+        box-shadow: 2px 0 3px black
+        ul
+            @include display-direc(flex, row, center, center)
+            li
+                margin: 10px
+                list-style: none             
+                a
+                    @include custom-font(1rem, #000)
+                    text-decoration: none
+
+main // CONTEUDO
+    @include size--marg( 100%, 100%, 0px, 0px)
+    position: absolute
+
+footer  // FOOTER
+    @include display-direc(flex, row, flex-start, center)
+    @include size--marg( 100%, 5%, 0px, 0px)
+    background: linear-gradient(#e4e4e4, rgb(62, 62, 62))
+    h1
+        margin-left: 15px
+        font-size: 1rem
+        font-weight: 400
+        animation: copyRight 10s infinite
+
+@keyframes copyRight 
+    0% 
+        color: rgb(255, 255, 255)
+    50%
+        color: rgba(255, 255, 255, 0)
+    100%
+        color: rgb(255, 255, 255)
+
+// [data-anime]
+//     opacity: 1
+//     transition: 0.8s
+// 
+// [data-anime="right"]
+//     transform: translate3d(-50px, 0, 0)
+// 
+// [data-anime].animate
+//     opacity: 1
+//     transform: translate3d(0px, 0px, 0px)
+// 
+
+
+

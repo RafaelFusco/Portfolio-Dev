@@ -1,0 +1,15 @@
+@import '../../../2-sass/_mixins'
+@import '../../../2-sass/_placeholder'
+    
+#inicio
+    @include display-direc(flex, column, space-around, center)
+    @extend %tamanho-conteudo
+    background-color: #415a77
+    
+    #cartao-inicio
+        @include display-direc(flex, column, center, center)
+        h1
+            @include custom-font(5rem, rgba(255, 255, 255, 0.7))
+        h2
+            @include custom-font(2rem, rgba(255, 255, 255, 0.5))
+

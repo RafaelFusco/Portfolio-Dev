@@ -1,0 +1,74 @@
+@import '../../../2-sass/_mixins'
+@import '../../../2-sass/_placeholder'
+
+#projetos // CONTEUDO PROJETOS
+    @include display-direc( flex, column, center, center)
+    @extend %tamanho-conteudo
+    background-color: #f1f1f1
+    border-top: solid 2px rgba(0, 0, 0, 0.5)
+
+#agrupar // JUNTA O TITULO COM OS CARTOES
+    @include display-direc( flex, row, space-between, center)
+    @include size--marg(80%, max-content, 0px, 0px)
+    h1 // TITULO
+        @extend %titulo
+            
+#cartoes // LISTA DE CARTOES
+    @include display-direc( flex, column, center, center)
+    @include size--marg(55%, max-content, 0px, 0px)
+
+    #cartao-proj // TAMANHO DO CARTAO
+        @include size--marg(500px, 125px, 20px 0px, 0px)
+        transform-style: preserve-3d
+        transition-duration: 1s
+                          
+        #front // FRENTE DO CARTAO
+            transform: rotateX(180deg)
+            img  
+                @include size--marg(30%, 100%, 0px, 0px)
+            
+            h2 // TITULO
+                @include custom-font(1.5rem, #000)
+            ul // LISTA
+                li // ELEMENTOS
+                    @include custom-font(1rem, #000)
+            ul#hab // LISTA DE HABILIDADES
+                @include display-direc( flex, row, center, center)
+                width: 100%
+                list-style: none
+                li // ELEMENTOS
+                    @include size--marg(max-content, max-content, 2px, 0 2%)
+                    @include custom-font(0.9rem, #000)
+                    border: solid 1px rgb(154, 154, 154)
+                    background-color: #fff
+        
+        #back // COSTAS DO CARTAO
+            img
+                @include size--marg(30%, 100%, 0px, 0px)
+            
+            h2 // SOBRE
+                @include custom-font(1.5rem, #000)
+            p
+                height: 100%
+                @include custom-font(0.9rem, #000)
+                                            
+.flip 
+    transform: rotateX(180deg)
+
+.face // ESTILO DO CARTAO
+    @include display-direc( flex, row, center, center)
+    @include size--marg(500px, 125px, 0px, 5px)
+    @extend %cartao-style
+    position: absolute
+    backface-visibility: hidden
+
+#info-proj // INFO DO CARTAO
+    @include display-direc( flex, column, space-between, center)
+    @include size--marg(100%, 100%, 0% 2%, 0px)
+
+#botao-flip // BOTAO DO CARTAO
+    @include display-direc( flex, column, flex-end, flex-end)
+    @include size--marg(max-content, 100%, 0px, 0px)
+    button // ESTILO DO BOTAO
+        @include size--marg(24px, 24px, 0px, 0px)
+        border: solid 1px rgb(154, 154, 154)

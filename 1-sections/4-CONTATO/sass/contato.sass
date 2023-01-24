@@ -1,0 +1,75 @@
+@import '../../../2-sass/_mixins'
+@import '../../../2-sass/_placeholder'
+
+.container-4
+    @include display-direc(flex, column, space-around, center)
+    @include size--marg(100%, 100vh, 0px, 0px)
+
+#contato // CONTEUDO CONTATO
+    background-color: #e4e4e4
+    border-top: solid 2px rgba(0, 0, 0, 0.5)
+
+    #separar // JUNTA O TITULO COM O FORMULARIO
+        @include display-direc(flex, row, space-around, center)
+        @include size--marg(100%, 85%, 50px 0 0 0, 0px)
+        h1 // TITULO
+            @extend %titulo
+  
+        #formulario // ESTILO DO FORMULARIO
+            @include display-direc(flex, column, center, center)
+            @include size--marg(max-content, max-content, 15px 0 25px, 0px)
+            @extend %cartao-style        
+            form // FORMULARIO
+                @include display-direc(flex, column, center, center)
+                @include size--marg(400px, 280px, 0 15px, 0px)
+                font-weight: 600
+                label // LABEL NAME E EMAIL
+                    font-size: 1rem
+                input // INPUT NAME E EMAIL
+                    width: 100%
+                    border: solid 1px rgb(154, 154, 154)
+                    &:focus
+                        box-shadow: 0 0 0 0
+                        outline: 0
+                textarea // MENSAGEM
+                    @include size--marg(100%, 50%, 10px 0, 0)
+                    border: solid 1px rgb(154, 154, 154)
+                    resize: none
+                    &:focus
+                        box-shadow: 0 0 0 0
+                        outline: 0
+                button // BOTAO ENVIAR
+                    @include size--marg(100%, max-content, 0, 3px)
+                    border: solid 1px rgb(154, 154, 154)
+                    font-weight: 600
+                    cursor: pointer
+ 
+    #links // REDES SOCIAIS
+        @include display-direc(flex, row, space-between, center)
+        @include size--marg(100%, 12%, 0, 0)
+        background-color: #e4e4e4
+        box-shadow: 0 0 3px black
+        cursor: default
+        .links-info // ELEMENTOS
+            @include display-direc(flex, row, center, center)
+            @include size--marg(100%, 100%, 0, 5px)
+            list-style: none
+            &:hover
+                background-color: rgb(255, 255, 255)
+            img // ICONES
+                @include size--marg(24px, 24px, 5px, 0)
+            ul
+                list-style: none
+                li // TEXTO
+                    font-weight: 600
+                    a // LINK
+                        color: #000
+                                
+                            
+                        
+                    
+                
+            
+                       
+    
+  

@@ -1,0 +1,57 @@
+@import '../../../2-sass/_mixins'
+@import '../../../2-sass/_placeholder'
+
+#sobre // CONTEUDO SOBRE
+    @include display-direc( flex, column, center, center)
+    @extend %tamanho-conteudo
+    background-color: #e4e4e4
+    border-top: solid 2px rgba(0, 0, 0, 0.7)
+
+    #sobre-mim // CONTEUDO 1
+        @include display-direc( flex, row, space-between, center)
+        @include size--marg( 80%, max-content, 20px, 0px)
+        h1  // TITULO
+            @extend %titulo
+        span // ESCOPO TEXTO
+            width: 520px
+            p // TEXTO
+                @include custom-font(1rem, #000)
+                
+    #educacao // CONTEUDO 2
+        @include display-direc( flex, row, space-between, center)
+        @include size--marg( 80%, max-content, 20px, 0px)
+        h1  // TITULO
+            @extend %titulo       
+        #sobre-educacao // CARTAO
+            @extend %cartao-style
+            width: 520px
+            height: max-content
+            span // TITULOS DO CARTAO
+                @include display-direc( flex, row, space-between, center)
+                h2 // UNIVERSIDADE
+                    @include custom-font(1.5rem, #000)
+                h3 // DATA
+                    @include custom-font(1rem, #000)
+            h4 // GRADUAÇÃO
+                @include custom-font(0.9rem, #000)
+            ul // LISTA
+                @include custom-font(1rem, #000)
+                @include size--marg( 95%, max-content, 10px 20px, 0px)
+                li // ELEMENTOS
+                    @include custom-font(0.8rem, #000)
+
+    #habilidades // CONTEUDO 3
+        @include display-direc( flex, row, space-between, center)
+        @include size--marg( 80%, max-content, 20px, 0px)
+        h1  // TITULO
+            @extend %titulo
+        ul // LISTA
+            @include display-direc( flex, row, flex-start, center)
+            width: 520px
+            list-style: none  
+            li // HABILIDADES
+                @include custom-font(0.8rem, #000)
+                @extend %cartao-style
+                width: max-content
+                margin-right: 5px
+                font-weight: 700
