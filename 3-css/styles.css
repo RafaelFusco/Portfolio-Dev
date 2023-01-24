@@ -54,6 +54,26 @@ header nav ul li a {
   color: #000;
   text-decoration: none;
 }
+@media (max-width: 540px) {
+  header nav ul li a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 340px) {
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 280px) {
+  header nav ul li a {
+    font-size: 0.7rem;
+  }
+}
 
 main {
   width: 100%;

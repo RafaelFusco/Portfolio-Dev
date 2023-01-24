@@ -1,5 +1,6 @@
-@import '../../2-sass/_mixins'
-@import '../../2-sass/_placeholder'
+@import '../../../2-sass/_mixins'
+@import '../../../2-sass/_placeholder'
+@import '../../../2-sass/_utilities'
 
 #projetos // CONTEUDO PROJETOS
     @include display-direc( flex, column, center, center)
@@ -10,6 +11,18 @@
 #agrupar // JUNTA O TITULO COM OS CARTOES
     @include display-direc( flex, row, space-between, center)
     @include size--marg(80%, max-content, 0px, 0px)
+
+    @include mobile-4
+        flex-direction: column
+
+    @include mobile-3
+        flex-direction: column
+
+    @include mobile-2
+        flex-direction: column
+
+    @include mobile-1
+        flex-direction: column
     h1 // TITULO
         @extend %titulo
             
@@ -18,39 +31,120 @@
     @include size--marg(55%, max-content, 0px, 0px)
 
     #cartao-proj // TAMANHO DO CARTAO
-        @include size--marg(500px, 125px, 20px 0px, 0px)
+        @include size--marg(300px, 90px, 20px 0px, 0px)
         transform-style: preserve-3d
         transition-duration: 1s
+
+        @include mobile-1
+            width: 275px
+            height: 90px
+
+        @include mobile-2
+            width: 260px
+            height: 90px
+
+        @include mobile-3
+            width: 250px
+            height: 90px
+
+        @include mobile-4
+            width: 240px
+            height: 90px    
                           
         #front // FRENTE DO CARTAO
             transform: rotateX(180deg)
             img  
                 @include size--marg(30%, 100%, 0px, 0px)
+
+                @include mobile-3
+                    width: 30%
+                    height: 100%
             
             h2 // TITULO
                 @include custom-font(1.5rem, #000)
+
+                @include mobile-1
+                    font-size: 1.2rem
+
+                @include mobile-2
+                    font-size: 1rem
+
+                @include mobile-3
+                    font-size: 1rem
+
+                @include mobile-4
+                    font-size: 1rem
+
+
             ul // LISTA
                 li // ELEMENTOS
                     @include custom-font(1rem, #000)
+
+                    @include mobile-1
+                        font-size: 0.6rem
+
+                    @include mobile-2
+                        font-size: 0.6rem
+
+                    @include mobile-3
+                        font-size: 0.6rem
+
+                    @include mobile-4
+                        font-size: 0.6rem
+
             ul#hab // LISTA DE HABILIDADES
                 @include display-direc( flex, row, center, center)
                 width: 100%
                 list-style: none
+
                 li // ELEMENTOS
                     @include size--marg(max-content, max-content, 2px, 0 2%)
                     @include custom-font(0.9rem, #000)
                     border: solid 1px rgb(154, 154, 154)
                     background-color: #fff
+
+
+                    @include mobile-1
+                        font-size: 0.5rem
+
+                    @include mobile-2
+                        font-size: 0.5rem
+
+                    @include mobile-3
+                        font-size: 0.5rem
+
+                    @include mobile-4
+                        font-size: 0.4rem
+
+
         
         #back // COSTAS DO CARTAO
             img
                 @include size--marg(30%, 100%, 0px, 0px)
+                @include mobile-3
+                    width: 30%
+                    height: 100%
             
             h2 // SOBRE
                 @include custom-font(1.5rem, #000)
+
+                @include mobile-3
+                    font-size: 1rem
             p
                 height: 100%
                 @include custom-font(0.9rem, #000)
+
+                @include mobile-4
+                    font-size: 0.5rem
+
+                @include mobile-3
+                    font-size: 0.6rem
+
+                @include mobile-2
+                    font-size: 0.5rem
+
+                @include mobile-1
+                    font-size: 0.5rem
                                             
 .flip 
     transform: rotateX(180deg)
@@ -61,6 +155,22 @@
     @extend %cartao-style
     position: absolute
     backface-visibility: hidden
+
+    @include mobile-1
+        width: 275px
+        height: 90px
+
+    @include mobile-2
+        width: 275px
+        height: 90px
+
+    @include mobile-3
+        width: 275px
+        height: 90px
+
+    @include mobile-4
+        width: 240px
+        height: 90px
 
 #info-proj // INFO DO CARTAO
     @include display-direc( flex, column, space-between, center)

@@ -48,6 +48,31 @@
   margin: 50px 0 0 0;
   padding: 0px;
 }
+@media (max-width: 425px) {
+  #contato #separar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 540px) {
+  #contato #separar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 340px) {
+  #contato #separar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 280px) {
+  #contato #separar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 280px) {
+  #contato #separar h1 {
+    font-size: 1.5rem;
+  }
+}
 #contato #separar #formulario {
   display: flex;
   flex-direction: column;
@@ -68,6 +93,26 @@
   margin: 0 15px;
   padding: 0px;
   font-weight: 600;
+}
+@media (max-width: 540px) {
+  #contato #separar #formulario form {
+    width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  #contato #separar #formulario form {
+    width: 200px;
+  }
+}
+@media (max-width: 340px) {
+  #contato #separar #formulario form {
+    width: 200px;
+  }
+}
+@media (max-width: 280px) {
+  #contato #separar #formulario form {
+    width: 200px;
+  }
 }
 #contato #separar #formulario form label {
   font-size: 1rem;
@@ -134,11 +179,43 @@
   margin: 5px;
   padding: 0;
 }
+@media (max-width: 340px) {
+  #contato #links .links-info img {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 280px) {
+  #contato #links .links-info img {
+    width: 14px;
+    height: 14px;
+  }
+}
 #contato #links .links-info ul {
   list-style: none;
 }
 #contato #links .links-info ul li {
   font-weight: 600;
+}
+@media (max-width: 540px) {
+  #contato #links .links-info ul li {
+    font-size: 0rem;
+  }
+}
+@media (max-width: 425px) {
+  #contato #links .links-info ul li {
+    font-size: 0rem;
+  }
+}
+@media (max-width: 340px) {
+  #contato #links .links-info ul li {
+    font-size: 0rem;
+  }
+}
+@media (max-width: 280px) {
+  #contato #links .links-info ul li {
+    font-size: 0rem;
+  }
 }
 #contato #links .links-info ul li a {
   color: #000;

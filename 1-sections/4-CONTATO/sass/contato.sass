@@ -1,5 +1,6 @@
-@import '../../2-sass/_mixins'
-@import '../../2-sass/_placeholder'
+@import '../../../2-sass/_mixins'
+@import '../../../2-sass/_placeholder'
+@import '../../../2-sass/_utilities'
 
 .container-4
     @include display-direc(flex, column, space-around, center)
@@ -12,8 +13,24 @@
     #separar // JUNTA O TITULO COM O FORMULARIO
         @include display-direc(flex, row, space-around, center)
         @include size--marg(100%, 85%, 50px 0 0 0, 0px)
+
+        @include mobile-2
+            flex-direction: column
+
+        @include mobile-1
+            flex-direction: column
+
+        @include mobile-3
+            flex-direction: column
+
+        @include mobile-4
+            flex-direction: column
+
         h1 // TITULO
             @extend %titulo
+
+            @include mobile-4
+                font-size: 1.5rem
   
         #formulario // ESTILO DO FORMULARIO
             @include display-direc(flex, column, center, center)
@@ -23,14 +40,29 @@
                 @include display-direc(flex, column, center, center)
                 @include size--marg(400px, 280px, 0 15px, 0px)
                 font-weight: 600
+
+                @include mobile-1
+                    width: 500px
+
+                @include mobile-2
+                    width: 200px
+
+                @include mobile-3
+                    width: 200px
+
+                @include mobile-4
+                    width: 200px
+
                 label // LABEL NAME E EMAIL
                     font-size: 1rem
+
                 input // INPUT NAME E EMAIL
                     width: 100%
                     border: solid 1px rgb(154, 154, 154)
                     &:focus
                         box-shadow: 0 0 0 0
                         outline: 0
+
                 textarea // MENSAGEM
                     @include size--marg(100%, 50%, 10px 0, 0)
                     border: solid 1px rgb(154, 154, 154)
@@ -38,6 +70,7 @@
                     &:focus
                         box-shadow: 0 0 0 0
                         outline: 0
+
                 button // BOTAO ENVIAR
                     @include size--marg(100%, max-content, 0, 3px)
                     border: solid 1px rgb(154, 154, 154)
@@ -50,18 +83,43 @@
         background-color: #e4e4e4
         box-shadow: 0 0 3px black
         cursor: default
+
         .links-info // ELEMENTOS
             @include display-direc(flex, row, center, center)
             @include size--marg(100%, 100%, 0, 5px)
             list-style: none
             &:hover
                 background-color: rgb(255, 255, 255)
+
             img // ICONES
                 @include size--marg(24px, 24px, 5px, 0)
+
+                @include mobile-3
+                    width: 16px
+                    height: 16px
+
+                @include mobile-4
+                    width: 14px
+                    height: 14px
+
             ul
                 list-style: none
+
                 li // TEXTO
                     font-weight: 600
+
+                    @include mobile-1
+                        font-size: 0rem
+
+                    @include mobile-2
+                        font-size: 0rem
+
+                    @include mobile-3
+                        font-size: 0rem
+
+                    @include mobile-4
+                        font-size: 0rem
+
                     a // LINK
                         color: #000
                                 

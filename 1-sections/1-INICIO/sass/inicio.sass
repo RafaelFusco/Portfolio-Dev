@@ -1,5 +1,6 @@
-@import '../../2-sass/_mixins'
-@import '../../2-sass/_placeholder'
+@import '../../../2-sass/_mixins'
+@import '../../../2-sass/_placeholder'
+@import '../../../2-sass/_utilities'
     
 #inicio
     @include display-direc(flex, column, space-around, center)
@@ -10,6 +11,29 @@
         @include display-direc(flex, column, center, center)
         h1
             @include custom-font(5rem, rgba(255, 255, 255, 0.7))
+
+            @include mobile-4
+                font-size: 3rem
+
+            @include mobile-3
+                font-size: 3.3rem
+
+            @include mobile-2
+                font-size: 3.5rem
+
+            @include mobile-1
+                font-size: 3.7rem
         h2
             @include custom-font(2rem, rgba(255, 255, 255, 0.5))
 
+            @include mobile-4
+                font-size: 1.5rem
+
+            @include mobile-3
+                font-size: 1.8rem
+
+            @include mobile-2
+                font-size: 2.1rem
+
+            @include mobile-1
+                font-size: 2.5rem

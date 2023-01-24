@@ -11,20 +11,59 @@
   align-items: center;
   background-color: #415a77;
 }
-
-#cartao-inicio {
+#inicio #cartao-inicio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#cartao-inicio h1 {
+#inicio #cartao-inicio h1 {
   font-size: 5rem;
   color: rgba(255, 255, 255, 0.7);
 }
-#cartao-inicio h2 {
+@media (max-width: 280px) {
+  #inicio #cartao-inicio h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 340px) {
+  #inicio #cartao-inicio h1 {
+    font-size: 3.3rem;
+  }
+}
+@media (max-width: 425px) {
+  #inicio #cartao-inicio h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 540px) {
+  #inicio #cartao-inicio h1 {
+    font-size: 3.7rem;
+  }
+}
+#inicio #cartao-inicio h2 {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 280px) {
+  #inicio #cartao-inicio h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 340px) {
+  #inicio #cartao-inicio h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 425px) {
+  #inicio #cartao-inicio h2 {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 540px) {
+  #inicio #cartao-inicio h2 {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=inicio.css.map */

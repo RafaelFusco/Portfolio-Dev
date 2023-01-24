@@ -1,5 +1,6 @@
 @import 'mixins'
 @import 'placeholder'
+@import 'utilities'
 @import '../1-sections/1-INICIO/css/inicio.css'
 @import '../1-sections/2-SOBRE/css/sobre.css'
 @import '../1-sections/3-PROJETOS/css/projetos.css'
@@ -36,6 +37,18 @@ header
                 a
                     @include custom-font(1rem, #000)
                     text-decoration: none
+
+                    @include mobile-1
+                        font-size: 1rem
+
+                    @include mobile-2
+                        font-size: 0.9rem
+
+                    @include mobile-3
+                        font-size: 0.8rem
+
+                    @include mobile-4
+                        font-size: 0.7rem
 
 main // CONTEUDO
     @include size--marg( 100%, 100%, 0px, 0px)

@@ -48,6 +48,26 @@
   margin: 0px;
   padding: 0px;
 }
+@media (max-width: 280px) {
+  #agrupar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 340px) {
+  #agrupar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  #agrupar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 540px) {
+  #agrupar {
+    flex-direction: column;
+  }
+}
 #cartoes {
   display: flex;
   flex-direction: column;
@@ -59,12 +79,36 @@
   padding: 0px;
 }
 #cartoes #cartao-proj {
-  width: 500px;
-  height: 125px;
+  width: 300px;
+  height: 90px;
   margin: 20px 0px;
   padding: 0px;
   transform-style: preserve-3d;
   transition-duration: 1s;
+}
+@media (max-width: 540px) {
+  #cartoes #cartao-proj {
+    width: 275px;
+    height: 90px;
+  }
+}
+@media (max-width: 425px) {
+  #cartoes #cartao-proj {
+    width: 260px;
+    height: 90px;
+  }
+}
+@media (max-width: 340px) {
+  #cartoes #cartao-proj {
+    width: 250px;
+    height: 90px;
+  }
+}
+@media (max-width: 280px) {
+  #cartoes #cartao-proj {
+    width: 240px;
+    height: 90px;
+  }
 }
 #cartoes #cartao-proj #front {
   transform: rotateX(180deg);
@@ -75,13 +119,59 @@
   margin: 0px;
   padding: 0px;
 }
+@media (max-width: 340px) {
+  #cartoes #cartao-proj #front img {
+    width: 30%;
+    height: 100%;
+  }
+}
 #cartoes #cartao-proj #front h2 {
   font-size: 1.5rem;
   color: #000;
 }
+@media (max-width: 540px) {
+  #cartoes #cartao-proj #front h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 425px) {
+  #cartoes #cartao-proj #front h2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 340px) {
+  #cartoes #cartao-proj #front h2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  #cartoes #cartao-proj #front h2 {
+    font-size: 1rem;
+  }
+}
 #cartoes #cartao-proj #front ul li {
   font-size: 1rem;
   color: #000;
+}
+@media (max-width: 540px) {
+  #cartoes #cartao-proj #front ul li {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 425px) {
+  #cartoes #cartao-proj #front ul li {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 340px) {
+  #cartoes #cartao-proj #front ul li {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 280px) {
+  #cartoes #cartao-proj #front ul li {
+    font-size: 0.6rem;
+  }
 }
 #cartoes #cartao-proj #front ul#hab {
   display: flex;
@@ -101,20 +191,71 @@
   border: solid 1px rgb(154, 154, 154);
   background-color: #fff;
 }
+@media (max-width: 540px) {
+  #cartoes #cartao-proj #front ul#hab li {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  #cartoes #cartao-proj #front ul#hab li {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 340px) {
+  #cartoes #cartao-proj #front ul#hab li {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 280px) {
+  #cartoes #cartao-proj #front ul#hab li {
+    font-size: 0.4rem;
+  }
+}
 #cartoes #cartao-proj #back img {
   width: 30%;
   height: 100%;
   margin: 0px;
   padding: 0px;
 }
+@media (max-width: 340px) {
+  #cartoes #cartao-proj #back img {
+    width: 30%;
+    height: 100%;
+  }
+}
 #cartoes #cartao-proj #back h2 {
   font-size: 1.5rem;
   color: #000;
+}
+@media (max-width: 340px) {
+  #cartoes #cartao-proj #back h2 {
+    font-size: 1rem;
+  }
 }
 #cartoes #cartao-proj #back p {
   height: 100%;
   font-size: 0.9rem;
   color: #000;
+}
+@media (max-width: 280px) {
+  #cartoes #cartao-proj #back p {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 340px) {
+  #cartoes #cartao-proj #back p {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 425px) {
+  #cartoes #cartao-proj #back p {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 540px) {
+  #cartoes #cartao-proj #back p {
+    font-size: 0.5rem;
+  }
 }
 
 .flip {
@@ -132,6 +273,30 @@
   padding: 5px;
   position: absolute;
   backface-visibility: hidden;
+}
+@media (max-width: 540px) {
+  .face {
+    width: 275px;
+    height: 90px;
+  }
+}
+@media (max-width: 425px) {
+  .face {
+    width: 275px;
+    height: 90px;
+  }
+}
+@media (max-width: 340px) {
+  .face {
+    width: 275px;
+    height: 90px;
+  }
+}
+@media (max-width: 280px) {
+  .face {
+    width: 240px;
+    height: 90px;
+  }
 }
 
 #info-proj {
